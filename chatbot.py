@@ -30,7 +30,7 @@ OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434")
 
 MODELOS_PADRAO = {
     "ollama": "llama3.2:3b",
-    "gemini": "gemini-2.0-flash",
+    "gemini": "gemini-3.6-flash",
     "groq": "llama-3.3-70b-versatile",
 }
 MODELO = os.getenv("LLM_MODEL", MODELOS_PADRAO.get(PROVIDER, "llama3.2:3b"))
