@@ -35,7 +35,7 @@ MODELOS_PADRAO = {
 }
 MODELO = os.getenv("LLM_MODEL", MODELOS_PADRAO.get(PROVIDER, "llama3.2:3b"))
 TEMPERATURA = 0.3
-TIMEOUT = 120
+TIMEOUT = 300
 
 
 def _carregar_system_prompt() -> str:
